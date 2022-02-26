@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
+
+.logo {
+  height: "80px";
+}
+
+.scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mobile {
+  @apply lg:hidden;
+}
+
+.desktop {
+  @apply hidden lg:block;
+}
+
+p {
+  @apply my-2;
+}
+
+h1 {
+  @apply text-4xl lg:text-6xl font-bold;
+}
+
+h2 {
+  @apply text-2xl lg:text-4xl mt-12 lg:mt-16 leading-tight font-bold;
+}
+
+h3 {
+  @apply text-lg lg:text-xl my-8 lg:mt-12 lg:mb-8 leading-tight font-bold;
+}
+
+ul {
+  @apply ml-8;
+}
+
+li {
+  @apply list-disc;
+}
