@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import TopBar from "./components/TopBar";
-import SideBar from "./components/SideBar";
+import MenuTop from "./components/MenuTop";
+import MenuLeft from "./components/MenuLeft";
 // import MenuOverlay from "./components/MenuOverlay";
 
 export default function App() {
@@ -16,8 +16,8 @@ export default function App() {
 
   return (
     <div className="relative">
-      <TopBar menuHeight={topMenuHight} />
-      <SideBar menuHeight={topMenuHight} onOpenMenu={toggleMenu} />
+      <MenuTop>Home</MenuTop>
+      <MenuLeft onOpenMenu={toggleMenu} />
       {/* {showMenu && <MenuOverlay onCloseMenu={toggleMenu} />} */}
     </div>
   );
