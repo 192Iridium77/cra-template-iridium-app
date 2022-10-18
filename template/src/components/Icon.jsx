@@ -4,6 +4,7 @@ import { ReactComponent as LocationMarker } from "./icons/LocationMarker.svg";
 import { ReactComponent as Menu } from "./icons/Menu.svg";
 import { ReactComponent as Photograph } from "./icons/Photograph.svg";
 import { ReactComponent as Truck } from "./icons/Truck.svg";
+import { ReactComponent as Book } from "./icons/Book.svg";
 
 export default function Icon({ type, size }) {
   const icons = {
@@ -13,6 +14,7 @@ export default function Icon({ type, size }) {
     Menu,
     Photograph,
     Truck,
+    Book,
   };
   const SelectedIcon = icons[type];
   const getSize = () => {

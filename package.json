@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf build && npx create-react-app build --template file:../cra-template-iridium-app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
