@@ -2,8 +2,8 @@ import * as React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
-import Stories from "./pages/Stories";
-import Story from "./pages/Story";
+import Dashboard from "./pages/Dashboard";
+import Item from "./pages/Item";
 
 import { Box, Container } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -21,10 +21,10 @@ export default function MiniDrawer() {
           <Routes>
             <Route
               path="/"
-              element={<Navigate to="/stories" replace={true} />}
+              element={<Navigate to="/dashboard" replace={true} />}
             />
-            <Route path="/stories" element={<Stories />} />
-            <Route path="/book/:bookId" element={<Story />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/item/:itemId" element={<Item />} />
           </Routes>
         </Container>
       </Box>
